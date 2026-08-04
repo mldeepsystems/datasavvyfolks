@@ -126,6 +126,13 @@
   .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
   .hero .terms { margin-top: 26px; font-family: var(--mono); font-size: .78rem; letter-spacing: .04em; color: var(--faint); text-transform: uppercase; display: flex; flex-wrap: wrap; gap: 6px 14px; }
   .hero .terms span::before { content: "+ "; color: var(--accent); }
+  .proof { display: flex; align-items: center; gap: 13px; margin-top: 26px; }
+  .avstack { display: flex; }
+  .avstack img, .avstack .more { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--bg); margin-left: -12px; object-fit: cover; }
+  .avstack img:first-child { margin-left: 0; }
+  .avstack .more { background: var(--panel-2); color: var(--accent); font-family: var(--mono); font-size: .68rem; font-weight: 600; display: grid; place-items: center; }
+  .proof .txt { font-family: var(--mono); font-size: .84rem; color: var(--muted); letter-spacing: .02em; }
+  .proof .txt b { color: var(--ink); font-weight: 600; }
 
   /* ---------- READOUT BAR ---------- */
   .readout { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border-block: 1px solid var(--line); }
@@ -311,6 +318,17 @@
         Connect on LinkedIn to join
       </a>
       <a class="btn btn-ghost" href="#event">See the next event</a>
+    </div>
+    <div class="proof reveal">
+      <div class="avstack" aria-hidden="true">
+        <img src="assets/avatars/a1.jpg" alt="" width="40" height="40" loading="lazy" />
+        <img src="assets/avatars/a2.jpg" alt="" width="40" height="40" loading="lazy" />
+        <img src="assets/avatars/a3.jpg" alt="" width="40" height="40" loading="lazy" />
+        <img src="assets/avatars/a4.jpg" alt="" width="40" height="40" loading="lazy" />
+        <img src="assets/avatars/a5.jpg" alt="" width="40" height="40" loading="lazy" />
+        <span class="more">+255</span>
+      </div>
+      <span class="txt"><b>260+</b> data folks already inside</span>
     </div>
     <div class="terms reveal" aria-hidden="true">
       <span>free while we grow</span><span>no spam</span><span>no sales</span><span>vetted members</span>
