@@ -188,6 +188,11 @@
   .event .meta svg.i { width: 18px; height: 18px; }
   .event .hosts { opacity: .92; font-size: .95rem; }
   .event .cta-col { text-align: center; }
+  .event .embed { width: 416px; max-width: 100%; }
+  .event .embed iframe { width: 100%; height: 560px; border: none; border-radius: 16px; background: #fff; display: block; box-shadow: 0 16px 40px -16px rgba(0,0,0,.4); }
+  .event .embed .fallback { display: inline-block; margin-top: 12px; color: #fff; opacity: .9; font-size: .85rem; font-weight: 500; text-decoration: underline; }
+  .event .embed .fallback:hover { opacity: 1; }
+  @media (max-width: 760px){ .event .embed { width: 100%; } }
   /* countdown */
   .countdown { display: flex; gap: 10px; margin-bottom: 18px; }
   .cd { background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.25); border-radius: 14px; padding: 10px 4px; min-width: 62px; text-align: center; }
@@ -389,11 +394,14 @@
         </div>
         <p class="hosts">Hosted by <b>Anmol Parimoo</b> &amp; <b>Nishant Sharma</b> · Tool-neutral, unsponsored, 100% guidance.</p>
       </div>
-      <div class="cta-col">
-        <a class="btn btn-warm" href="https://luma.com/riabx20e" target="_blank" rel="noopener">
-          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-          Register free
-        </a>
+      <div class="embed">
+        <iframe
+          src="https://luma.com/embed/event/evt-8DOgTBdRAV3L6Ot/simple"
+          title="Register for Breaking Into Data on Luma"
+          loading="lazy"
+          allow="fullscreen; payment"
+          tabindex="0"></iframe>
+        <a class="fallback" href="https://luma.com/riabx20e" target="_blank" rel="noopener">Can't see the form? Register on Luma →</a>
       </div>
     </div>
     <!-- ▲ EDIT THIS BLOCK ▲ -->
