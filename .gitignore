@@ -4,3 +4,6 @@
 .AppleDouble
 # Editor
 .vscode/
+
+# Local marketing drafts (not for public repo)
+LINKEDIN_POST.md
