@@ -199,10 +199,9 @@
   .ev-cta { margin-top: 26px; }
   .event-solo { display: flex; flex-direction: column; align-items: center; text-align: center; }
   .event-solo .countdown { justify-content: center; margin: 20px 0 24px; }
-  .embed-lg { width: 100%; max-width: 760px; }
-  .embed.embed-lg iframe { width: 100%; height: 348px; border: none; border-radius: 0; display: block; overflow: hidden; } /* wide: Luma reflows to a horizontal card */
-  .event-solo .ev-cta { margin-top: 22px; }
-  @media (max-width: 800px){ .embed.embed-lg iframe { height: 560px; } } /* narrow: vertical card, clipped preview + button below */
+  .embed-lg { width: 100%; max-width: 920px; }
+  .embed.embed-lg iframe { width: 100%; height: 430px; border: none; border-radius: 0; display: block; overflow: hidden; } /* wide: Luma reflows to a horizontal card */
+  @media (max-width: 800px){ .embed.embed-lg iframe { height: 840px; } } /* narrow: vertical card — tall enough to show the embed's register button */
   .embed .fallback { display: inline-block; margin-top: 12px; font-family: var(--mono); font-size: .8rem; color: var(--accent); text-decoration: none; }
   .embed .fallback:hover { text-decoration: underline; }
   @media (max-width: 900px){ .event { grid-template-columns: 1fr; padding: 30px 24px; } .embed iframe { height: 540px; } }
@@ -335,10 +334,6 @@
       <div class="embed embed-lg">
         <iframe src="https://luma.com/embed/event/evt-8DOgTBdRAV3L6Ot/simple" title="Register for Breaking Into Data on Luma" loading="lazy" allow="fullscreen; payment" scrolling="no" tabindex="0"></iframe>
       </div>
-      <a class="btn btn-primary ev-cta" href="https://luma.com/riabx20e" target="_blank" rel="noopener">
-        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 000 4v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2a2 2 0 000-4z"/><path d="M14 6v12" stroke-dasharray="2 2"/></svg>
-        Register free — save your spot
-      </a>
       <!-- ▲ EDIT ▲ -->
     </div>
   </div>
