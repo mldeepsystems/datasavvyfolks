@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Data Savvy Folks — a community for people who work with data</title>
+<title>Data Savvy Folks: a community for people who work with data</title>
 <meta name="description" content="Get unstuck in your data career with 267 analysts, engineers, scientists and ML/AI builders swapping feedback, job leads and honest advice. Free while we grow to 1,000." />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Data Savvy Folks" />
-<meta property="og:title" content="Data Savvy Folks — data is a team sport" />
+<meta property="og:title" content="Data Savvy Folks: data is a team sport" />
 <meta property="og:description" content="267 data pros & aspirants swapping feedback, job leads and honest advice. Free while we grow to 1,000. Come join us." />
 <meta property="og:image" content="https://mldeepsystems.github.io/datasavvyfolks/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/png" />
-<meta property="og:image:alt" content="Data is a team sport — join Data Savvy Folks free. 267 data pros swapping feedback, job leads and advice. Connect on LinkedIn to join." />
-<meta name="twitter:image:alt" content="Data is a team sport — join Data Savvy Folks free. 267 data pros swapping feedback, job leads and advice. Connect on LinkedIn to join." />
+<meta property="og:image:alt" content="Data is a team sport. Join Data Savvy Folks free. 267 data pros swapping feedback, job leads and advice. Connect on LinkedIn to join." />
+<meta name="twitter:image:alt" content="Data is a team sport. Join Data Savvy Folks free. 267 data pros swapping feedback, job leads and advice. Connect on LinkedIn to join." />
 <meta property="og:url" content="https://mldeepsystems.github.io/datasavvyfolks/" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="theme-color" content="#0B0E14" />
@@ -29,7 +29,7 @@
 
 <style>
   /* ============================================================
-     Data Savvy Folks — "community as a live dataset"
+     Data Savvy Folks: "community as a live dataset"
      Identity: IBM Plex + Bricolage, mono labels, graph-paper grid,
      hairline structure, one mint accent used with restraint.
      Edit links: LinkedIn (join), Luma iframe src + data-event-utc.
@@ -97,13 +97,14 @@
   svg.i { width: 24px; height: 24px; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; fill: none; display: block; }
 
   /* Buttons */
-  .btn { display: inline-flex; align-items: center; gap: 9px; font-family: var(--sans); font-weight: 600; font-size: 1rem; text-decoration: none; padding: 13px 22px; border-radius: 8px; border: 1px solid transparent; cursor: pointer; transition: transform .15s ease, background-color .15s ease, border-color .15s ease, color .15s ease; white-space: nowrap; }
+  .btn { display: inline-flex; align-items: center; gap: 9px; font-family: var(--sans); font-weight: 600; font-size: 1rem; text-decoration: none; padding: 13px 22px; border-radius: 8px; border: 1px solid transparent; cursor: pointer; position: relative; transition: transform .15s ease, background-color .15s ease, border-color .15s ease, color .15s ease; white-space: nowrap; }
   .btn svg.i { width: 18px; height: 18px; stroke-width: 1.8; }
   .btn-primary { background: var(--accent); color: var(--on-accent); }
   .btn-primary:hover { background: #4dedcf; transform: translateY(-1px); }
   .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line-2); }
   .btn-ghost:hover { border-color: var(--accent); color: #fff; transform: translateY(-1px); }
   .btn:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .ftag { position: absolute; top: -9px; right: -10px; background: var(--bg); color: var(--accent); border: 1px solid var(--accent); font-family: var(--mono); font-size: .58rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; padding: 2px 6px; border-radius: 999px; line-height: 1.5; }
 
   /* ---------- NAV ---------- */
   nav { position: sticky; top: 0; z-index: var(--z-nav); backdrop-filter: saturate(160%) blur(14px); background: rgba(11,14,20,.8); border-bottom: 1px solid var(--line); }
@@ -244,7 +245,7 @@
   .past-tag { font-family: var(--mono); font-size: .78rem; letter-spacing: .04em; color: var(--accent); border: 1px solid rgba(53,224,193,.3); border-radius: 999px; padding: 7px 16px; margin-bottom: 20px; }
   .embed-lg { width: 100%; max-width: 920px; }
   .embed.embed-lg iframe { width: 100%; height: 360px; border: none; border-radius: 10px; display: block; overflow: hidden; } /* wide: Luma reflows to a horizontal card */
-  @media (max-width: 800px){ .embed.embed-lg iframe { height: 840px; } } /* narrow: vertical card — tall enough to show the embed's register button */
+  @media (max-width: 800px){ .embed.embed-lg iframe { height: 840px; } } /* narrow: vertical card, tall enough to show the embed's register button */
 
   /* ---------- STEPS (real sequence → numbered) ---------- */
   .steps { border-top: 1px solid var(--line); }
@@ -329,15 +330,15 @@
   <div class="wrap">
     <p class="prompt reveal"><span class="p">dsf</span><span class="path">:~$</span> ./join --community<span class="cursor" aria-hidden="true"></span></p>
     <h1 class="reveal">Data is a <span class="ac">team sport.</span></h1>
-    <p class="sub reveal">Get unstuck in your data career — with 267 analysts, engineers, scientists and ML/AI builders swapping honest feedback, job leads and real advice. Free while we grow to 1,000.</p>
+    <p class="sub reveal">Get unstuck in your data career, alongside 267 analysts, engineers, scientists and ML/AI builders swapping honest feedback, job leads and real advice. Free while we grow to 1,000.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">
         <svg class="i" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21H9z"/></svg>
-        Request your invite — free
+        Request your invite<span class="ftag">free</span>
       </a>
       <a class="btn btn-ghost" href="#voices">See member reviews</a>
     </div>
-    <p class="cta-note reveal"><span class="ac">//</span> connect with me on LinkedIn — I review every request personally, usually the same day.</p>
+    <p class="cta-note reveal"><span class="ac">//</span> connect with me on LinkedIn, and I review every request personally, usually the same day.</p>
     <div class="proof reveal">
       <div class="avstack" aria-hidden="true">
         <img src="assets/avatars/a1.jpg" alt="" width="40" height="40" loading="lazy" />
@@ -378,7 +379,7 @@
     <div class="sec-head reveal">
       <span class="label">// why join</span>
       <h2>What you actually get</h2>
-      <p>Real value from day one — no fluff, no upsell.</p>
+      <p>Real value from day one. No fluff, no upsell.</p>
     </div>
     <div class="spec">
       <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></div><h3>Free mentorship webinars</h3><p>Live sessions on breaking in, leveling up and navigating the data career maze. No cost, no catch.</p></div>
@@ -403,7 +404,7 @@
     <div class="quotes reveal">
       <div class="quote">
         <div class="stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
-        <p>An excellent, informative session. The guidance on transitioning into data analytics — and what the industry actually expects — gave me a much clearer direction for my career.</p>
+        <p>An excellent, informative session. The guidance on transitioning into data analytics, and what the industry actually expects, gave me a much clearer direction for my career.</p>
         <div class="by"><span class="nm"><span class="ac">&gt;</span> Roshni Yadav</span></div>
       </div>
       <div class="quote">
@@ -413,8 +414,14 @@
       </div>
       <div class="quote">
         <div class="stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
-        <p>A great session — good amount of learning and insights. Really hoping to join more like this. Ye dil maange more!</p>
-        <div class="by"><span class="nm"><span class="ac">&gt;</span> Arghyajyoti Samui</span></div>
+        <p>A great session. Good amount of learning and insights. Really hoping to join more like this. Ye dil maange more!</p>
+        <div class="by">
+          <span class="nm"><span class="ac">&gt;</span> Arghyajyoti Samui</span>
+          <span class="socials">
+            <a href="https://www.linkedin.com/in/arghyajyoti-samui/" target="_blank" rel="noopener" aria-label="Arghyajyoti Samui on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21H9z"/></svg></a>
+            <a href="https://github.com/Arghyajyoti007" target="_blank" rel="noopener" aria-label="Arghyajyoti Samui on GitHub"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17 4.7 18 5 18 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.3v3.3c0 .3.2.7.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+          </span>
+        </div>
       </div>
       <div class="quote">
         <div class="stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
@@ -437,7 +444,7 @@
     <div class="sec-head reveal">
       <span class="label">// the people</span>
       <h2>You're not doing this alone</h2>
-      <p>Behind every question is someone who's been there. This is a place to be seen, ask freely, and grow with people who have your back — no gatekeeping, no judgment.</p>
+      <p>Behind every question is someone who's been there. This is a place to be seen, ask freely, and grow with people who have your back. No gatekeeping, no judgment.</p>
     </div>
     <!-- Community photos: Unsplash (free license). Duotone-tinted to match the theme; color on hover. -->
     <div class="people reveal">
@@ -457,7 +464,7 @@
          When that date passes, this auto-switches to the "next session" prompt. ▼ -->
     <div class="event-solo reveal" data-event-utc="2026-08-06T12:30:00Z">
       <div class="ev-upcoming">
-        <span class="label">// upcoming — free &amp; online</span>
+        <span class="label">// upcoming · free &amp; online</span>
         <div class="countdown" id="countdown" aria-label="Time until event">
           <div class="cd"><b data-cd="d">--</b><small>days</small></div>
           <div class="cd"><b data-cd="h">--</b><small>hrs</small></div>
@@ -471,10 +478,10 @@
       <div class="ev-past" hidden>
         <span class="label">// next session</span>
         <h2 class="ev-past-h">Members get first dibs on the next one</h2>
-        <p class="ev-past-sub">No session on the calendar this exact second — but more are coming, and our last one hit a perfect <b>5.0</b>. The invites go out in the community first. Join now so you don't miss it.</p>
+        <p class="ev-past-sub">No session on the calendar this exact second, but more are coming, and our last one hit a perfect <b>5.0</b>. The invites go out in the community first. Join now so you don't miss it.</p>
         <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">
           <svg class="i" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21H9z"/></svg>
-          Request your invite — free
+          Request your invite<span class="ftag">free</span>
         </a>
       </div>
     </div>
@@ -495,7 +502,7 @@
         <div><b>100%</b><small>5-star</small></div>
       </div>
       <div class="embed embed-lg">
-        <iframe src="https://luma.com/embed/event/evt-8DOgTBdRAV3L6Ot/simple" title="Breaking Into Data — past event on Luma" loading="lazy" allow="fullscreen; payment" scrolling="no" tabindex="0"></iframe>
+        <iframe src="https://luma.com/embed/event/evt-8DOgTBdRAV3L6Ot/simple" title="Breaking Into Data past event on Luma" loading="lazy" allow="fullscreen; payment" scrolling="no" tabindex="0"></iframe>
       </div>
     </div>
   </div>
@@ -519,7 +526,7 @@
       <span class="tag"><span class="b">[</span> students <span class="b">]</span></span>
     </div>
     <p class="tags-note reveal"><span class="ac">#</span> curiosity is the only prerequisite.</p>
-    <p class="tags-note reveal"><span class="ac">#</span> not for: course-sellers · lurking recruiters · crypto bros — vetted, so it stays that way.</p>
+    <p class="tags-note reveal"><span class="ac">#</span> not for: course-sellers · lurking recruiters · crypto bros. Vetted, so it stays that way.</p>
   </div>
 </section>
 
@@ -529,17 +536,17 @@
     <div class="sec-head reveal">
       <span class="label">// how to join</span>
       <h2>Two minutes, one quick review</h2>
-      <p>We keep the community vetted so every conversation stays high-signal — and so does the invite process.</p>
+      <p>We keep the community vetted so every conversation stays high-signal, and so does the invite process.</p>
     </div>
     <div class="steps">
-      <div class="step reveal"><div class="n">01</div><div><h3>Connect with me on LinkedIn</h3><p>Send a connection request — a one-line hello about your data journey helps me say yes faster.</p></div></div>
-      <div class="step reveal"><div class="n">02</div><div><h3>I check you're a real data person</h3><p>A quick look at your profile — that's what keeps out spam, cold recruiters and course-sellers. Usually done the same day.</p></div></div>
+      <div class="step reveal"><div class="n">01</div><div><h3>Connect with me on LinkedIn</h3><p>Send a connection request. A one-line hello about your data journey helps me say yes faster.</p></div></div>
+      <div class="step reveal"><div class="n">02</div><div><h3>I check you're a real data person</h3><p>A quick look at your profile. That's what keeps out spam, cold recruiters and course-sellers. Usually done the same day.</p></div></div>
       <div class="step reveal"><div class="n">03</div><div><h3>You get the invite</h3><p>I send you the WhatsApp community link and you jump straight into the conversation. That's it.</p></div></div>
     </div>
     <div class="join-cta reveal">
       <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">
         <svg class="i" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21H9z"/></svg>
-        Request your invite — free
+        Request your invite<span class="ftag">free</span>
       </a>
       <span class="note"># usually approved the same day · a self-serve form is coming soon.</span>
     </div>
@@ -556,23 +563,23 @@
     <div class="faq reveal">
       <details open>
         <summary><span class="q">Q</span><span>Is it really free?</span><span class="pm">+</span></summary>
-        <div class="ans">Yes — 100% free for the first 1,000 members. Every webinar, discussion and bit of guidance is on the house. We may add paid tiers once we're bigger, but founding members keep their free access.</div>
+        <div class="ans">Yes. 100% free for the first 1,000 members. Every webinar, discussion and bit of guidance is on the house. We may add paid tiers once we're bigger, but founding members keep their free access.</div>
       </details>
       <details>
         <summary><span class="q">Q</span><span>Who is this for?</span><span class="pm">+</span></summary>
-        <div class="ans">Anyone in or aspiring to be in data — analysts, data engineers, data scientists, ML/AI and GenAI builders, and career-switchers or freshers finding their footing. If you're curious about data, you belong. It's <em>not</em> for course-sellers, cold recruiters or crypto bros.</div>
+        <div class="ans">Anyone in or aspiring to be in data: analysts, data engineers, data scientists, ML/AI and GenAI builders, and career-switchers or freshers finding their footing. If you're curious about data, you belong. It's <em>not</em> for course-sellers, cold recruiters or crypto bros.</div>
       </details>
       <details>
         <summary><span class="q">Q</span><span>Why connect on LinkedIn to join?</span><span class="pm">+</span></summary>
-        <div class="ans">I approve every member personally — a 30-second look at your LinkedIn is the lightest way to keep the group high-signal and spam-free. It's usually done the same day. (A self-serve form is coming soon.)</div>
+        <div class="ans">I approve every member personally. A 30-second look at your LinkedIn is the lightest way to keep the group high-signal and spam-free. It's usually done the same day. (A self-serve form is coming soon.)</div>
       </details>
       <details>
         <summary><span class="q">Q</span><span>What's the catch? Selling courses?</span><span class="pm">+</span></summary>
-        <div class="ans">No catch, no course-selling, no MLM. The community is tool-neutral and unsponsored in spirit — MLDeep Systems simply powers it so the mentorship stays free.</div>
+        <div class="ans">No catch, no course-selling, no MLM. The community is tool-neutral and unsponsored in spirit, and MLDeep Systems simply powers it so the mentorship stays free.</div>
       </details>
       <details>
         <summary><span class="q">Q</span><span>How much time does it take?</span><span class="pm">+</span></summary>
-        <div class="ans">As little or as much as you like. Drop in for a webinar, lurk on discussions, or jump into everything — zero pressure, no attendance requirements.</div>
+        <div class="ans">As little or as much as you like. Drop in for a webinar, lurk on discussions, or jump into everything. Zero pressure, no attendance requirements.</div>
       </details>
     </div>
   </div>
@@ -590,13 +597,13 @@
         <div class="pico"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div>
         <span class="label mut">mission</span>
         <h3>The launchpad</h3>
-        <p>To be the home base for anyone in data — helping people break in, level up, and never grow alone. We turn scattered learners into a connected community that shares knowledge, opportunities and honest guidance.</p>
+        <p>To be the home base for anyone in data, helping people break in, level up, and never grow alone. We turn scattered learners into a connected community that shares knowledge, opportunities and honest guidance.</p>
       </div>
       <div class="panel reveal">
         <div class="pico"><svg class="i" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
         <span class="label mut">vision</span>
         <h3>1,000 strong</h3>
-        <p>A community where every data professional and aspirant — from analytics to GenAI — has a trusted circle to learn from, build with, and grow with.</p>
+        <p>A community where every data professional and aspirant, from analytics to GenAI, has a trusted circle to learn from, build with, and grow with.</p>
       </div>
       <div class="panel reveal">
         <div class="pico"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
@@ -619,12 +626,12 @@
   <div class="wrap">
     <div class="final reveal">
       <h2>Data is a team sport. <span class="ac">Pull up a chair.</span></h2>
-      <p>Join 267 data folks swapping feedback, job leads and honest advice — and grab one of the 733 free founding-member spots before we hit 1,000.</p>
+      <p>Join 267 data folks swapping feedback, job leads and honest advice. Grab one of the 733 free founding-member spots before we hit 1,000.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">Request your invite — free</a>
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">Request your invite<span class="ftag">free</span></a>
         <a class="btn btn-ghost" href="#why">See what you get</a>
       </div>
-      <p class="cta-note"><span style="color:var(--accent)">//</span> connect on LinkedIn — I approve members personally, usually same day.</p>
+      <p class="cta-note"><span style="color:var(--accent)">//</span> connect on LinkedIn, and I approve members personally, usually same day.</p>
     </div>
   </div>
 </section>
@@ -639,7 +646,7 @@
           <span class="mk-chip"><img src="assets/mldeep-logo.svg" alt="" width="30" height="30" /></span>
           <span class="wm"><b>MLDeep</b> Systems</span>
         </a>
-        <small>AI &amp; data systems that ship — sponsoring free mentorship for the community.</small>
+        <small>AI &amp; data systems that ship. Sponsoring free mentorship for the community.</small>
       </div>
       <a class="btn btn-ghost" href="https://www.mldeep.io/?utm_source=datasavvyfolks&amp;utm_medium=referral&amp;utm_campaign=community_sponsor" target="_blank" rel="noopener">Visit mldeep.io ↗</a>
     </div>
@@ -650,7 +657,7 @@
 <footer>
   <div class="wrap">
     <div class="fin">
-      <span class="fine">© <span id="year">2026</span> data_savvy_folks — built by the community, for the community.</span>
+      <span class="fine">© <span id="year">2026</span> data_savvy_folks · built by the community, for the community.</span>
       <div class="flinks">
         <a href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">linkedin</a>
         <a href="#events">events</a>
