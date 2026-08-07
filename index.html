@@ -4,18 +4,18 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Data Savvy Folks — a community for people who work with data</title>
-<meta name="description" content="260+ analysts, data engineers, scientists and ML/AI builders trading knowledge, feedback and job leads. Free mentorship, no spam — come join us." />
+<meta name="description" content="Get unstuck in your data career with 267 analysts, engineers, scientists and ML/AI builders swapping feedback, job leads and honest advice. Free while we grow to 1,000." />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Data Savvy Folks" />
 <meta property="og:title" content="Data Savvy Folks — data is a team sport" />
-<meta property="og:description" content="260+ data pros & aspirants trading knowledge, feedback and job leads. Free mentorship, no spam, no sales. Come join us." />
+<meta property="og:description" content="267 data pros & aspirants swapping feedback, job leads and honest advice. Free while we grow to 1,000. Come join us." />
 <meta property="og:image" content="https://mldeepsystems.github.io/datasavvyfolks/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/png" />
-<meta property="og:image:alt" content="Data is a team sport — join Data Savvy Folks free. 260+ data pros trading knowledge, feedback and job leads. Connect on LinkedIn to join." />
-<meta name="twitter:image:alt" content="Data is a team sport — join Data Savvy Folks free. 260+ data pros trading knowledge, feedback and job leads. Connect on LinkedIn to join." />
+<meta property="og:image:alt" content="Data is a team sport — join Data Savvy Folks free. 267 data pros swapping feedback, job leads and advice. Connect on LinkedIn to join." />
+<meta name="twitter:image:alt" content="Data is a team sport — join Data Savvy Folks free. 267 data pros swapping feedback, job leads and advice. Connect on LinkedIn to join." />
 <meta property="og:url" content="https://mldeepsystems.github.io/datasavvyfolks/" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="theme-color" content="#0B0E14" />
@@ -128,17 +128,20 @@
   @keyframes blink { 50% { opacity: 0; } }
   .hero h1 { font-size: clamp(3rem, 9vw, 6.2rem); font-weight: 700; letter-spacing: -.035em; max-width: 14ch; margin-bottom: 26px; }
   .hero h1 .ac { color: var(--accent); }
-  .hero .sub { font-size: clamp(1.08rem, 2.1vw, 1.32rem); color: var(--muted); max-width: 60ch; margin-bottom: 32px; }
+  .hero .sub { font-size: clamp(1.08rem, 2.1vw, 1.32rem); color: var(--muted); max-width: 60ch; margin-bottom: 30px; }
   .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero .cta-note { font-family: var(--mono); font-size: .82rem; color: var(--faint); margin-top: 14px; }
+  .hero .cta-note .ac { color: var(--accent); }
   .hero .terms { margin-top: 26px; font-family: var(--mono); font-size: .78rem; letter-spacing: .04em; color: var(--faint); text-transform: uppercase; display: flex; flex-wrap: wrap; gap: 6px 14px; }
   .hero .terms span::before { content: "+ "; color: var(--accent); }
-  .proof { display: flex; align-items: center; gap: 13px; margin-top: 26px; }
+  .proof { display: flex; align-items: center; gap: 13px; margin-top: 24px; }
   .avstack { display: flex; }
   .avstack img, .avstack .more { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--bg); margin-left: -12px; object-fit: cover; }
   .avstack img:first-child { margin-left: 0; }
   .avstack .more { background: var(--panel-2); color: var(--accent); font-family: var(--mono); font-size: .68rem; font-weight: 600; display: grid; place-items: center; }
   .proof .txt { font-family: var(--mono); font-size: .84rem; color: var(--muted); letter-spacing: .02em; }
   .proof .txt b { color: var(--ink); font-weight: 600; }
+  .proof .txt .ac { color: var(--accent); letter-spacing: 1px; }
 
   /* ---------- READOUT BAR ---------- */
   .readout { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border-block: 1px solid var(--line); }
@@ -147,6 +150,7 @@
   .readout .num .ac { color: var(--accent); }
   .readout .lbl { font-family: var(--mono); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-top: 8px; }
   .progress-line { display: flex; align-items: center; gap: 16px; padding: 20px 0 0; font-family: var(--mono); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+  .progress-line b { color: var(--accent); font-weight: 600; }
   .progress { flex: 1; height: 3px; background: var(--line); position: relative; overflow: hidden; }
   .progress > i { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--accent); transition: width 1.4s ease; }
   @media (max-width: 620px){ .readout { grid-template-columns: repeat(2, 1fr); } }
@@ -186,6 +190,7 @@
   .tag .b { color: var(--accent); }
   .tag:hover { border-color: var(--accent); }
   .tags-note { font-family: var(--mono); font-size: .82rem; color: var(--faint); margin-top: 18px; }
+  .tags-note .ac { color: var(--accent); }
 
   /* ---------- QUOTES ---------- */
   .quotes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
@@ -219,19 +224,10 @@
   }
 
   /* ---------- EVENT ---------- */
-  .event { border: 1px solid var(--line-2); border-radius: 14px; background: linear-gradient(180deg, var(--panel), var(--bg-2)); padding: 40px; display: grid; grid-template-columns: 1fr 416px; gap: 36px; align-items: start; position: relative; overflow: hidden; }
-  .event::before { content:""; position:absolute; top:0; left:0; right:0; height:1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity:.6; }
-  .event h3 { font-size: clamp(1.5rem, 3.2vw, 2.1rem); margin: 14px 0 22px; max-width: 20ch; }
-  .ev-meta { border-top: 1px solid var(--line); }
-  .ev-meta .r { display: grid; grid-template-columns: 92px 1fr; gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--line); align-items: center; }
-  .ev-meta .k { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); }
-  .ev-meta .v { color: var(--ink); display: inline-flex; align-items: center; gap: 9px; font-size: .98rem; }
-  .ev-meta .v svg.i { width: 17px; height: 17px; color: var(--accent); }
   .countdown { display: flex; gap: 8px; margin: 22px 0 4px; }
   .cd { border: 1px solid var(--line); border-radius: 8px; padding: 10px 6px; min-width: 60px; text-align: center; background: var(--bg); }
   .cd b { font-family: var(--display); display: block; font-size: 1.6rem; font-weight: 700; line-height: 1; }
   .cd small { font-family: var(--mono); font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
-  .ev-cta { margin-top: 26px; }
   .event-solo { display: flex; flex-direction: column; align-items: center; text-align: center; }
   .event-solo .countdown { justify-content: center; margin: 20px 0 24px; }
   .ev-upcoming:not([hidden]), .ev-past:not([hidden]) { display: flex; flex-direction: column; align-items: center; width: 100%; }
@@ -249,9 +245,6 @@
   .embed-lg { width: 100%; max-width: 920px; }
   .embed.embed-lg iframe { width: 100%; height: 360px; border: none; border-radius: 10px; display: block; overflow: hidden; } /* wide: Luma reflows to a horizontal card */
   @media (max-width: 800px){ .embed.embed-lg iframe { height: 840px; } } /* narrow: vertical card — tall enough to show the embed's register button */
-  .embed .fallback { display: inline-block; margin-top: 12px; font-family: var(--mono); font-size: .8rem; color: var(--accent); text-decoration: none; }
-  .embed .fallback:hover { text-decoration: underline; }
-  @media (max-width: 900px){ .event { grid-template-columns: 1fr; padding: 30px 24px; } .embed iframe { height: 540px; } }
 
   /* ---------- STEPS (real sequence → numbered) ---------- */
   .steps { border-top: 1px solid var(--line); }
@@ -277,8 +270,9 @@
   .final::before { content:""; position:absolute; top:0; left:0; right:0; height:1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); }
   .final h2 { font-size: clamp(2.1rem, 5vw, 3.2rem); margin-bottom: 14px; }
   .final h2 .ac { color: var(--accent); }
-  .final p { color: var(--muted); font-size: 1.1rem; max-width: 56ch; margin: 0 auto 30px; }
+  .final p { color: var(--muted); font-size: 1.1rem; max-width: 56ch; margin: 0 auto 22px; }
   .final .hero-cta { justify-content: center; }
+  .final .cta-note { font-family: var(--mono); font-size: .8rem; color: var(--faint); margin-top: 16px; }
 
   /* ---------- SPONSOR ---------- */
   .sponsor { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 30px; background: var(--bg-2); }
@@ -321,9 +315,9 @@
       data_savvy_folks
     </a>
     <div class="nav-links">
-      <a href="#event">event</a>
       <a href="#why">why join</a>
-      <a href="#voices">voices</a>
+      <a href="#voices">reviews</a>
+      <a href="#events">events</a>
       <a href="#faq">faq</a>
       <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">Join the community</a>
     </div>
@@ -335,14 +329,15 @@
   <div class="wrap">
     <p class="prompt reveal"><span class="p">dsf</span><span class="path">:~$</span> ./join --community<span class="cursor" aria-hidden="true"></span></p>
     <h1 class="reveal">Data is a <span class="ac">team sport.</span></h1>
-    <p class="sub reveal">260+ analysts, data engineers, data scientists and ML/AI builders — plus folks breaking in — trading knowledge, honest feedback and job leads. No spam, no course-selling. Free while we grow to 1,000.</p>
+    <p class="sub reveal">Get unstuck in your data career — with 267 analysts, engineers, scientists and ML/AI builders swapping honest feedback, job leads and real advice. Free while we grow to 1,000.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">
         <svg class="i" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21H9z"/></svg>
-        Connect on LinkedIn to join
+        Request your invite — free
       </a>
-      <a class="btn btn-ghost" href="#event">See the next event</a>
+      <a class="btn btn-ghost" href="#voices">See member reviews</a>
     </div>
+    <p class="cta-note reveal"><span class="ac">//</span> connect with me on LinkedIn — I review every request personally, usually the same day.</p>
     <div class="proof reveal">
       <div class="avstack" aria-hidden="true">
         <img src="assets/avatars/a1.jpg" alt="" width="40" height="40" loading="lazy" />
@@ -350,9 +345,9 @@
         <img src="assets/avatars/a3.jpg" alt="" width="40" height="40" loading="lazy" />
         <img src="assets/avatars/a4.jpg" alt="" width="40" height="40" loading="lazy" />
         <img src="assets/avatars/a5.jpg" alt="" width="40" height="40" loading="lazy" />
-        <span class="more">+255</span>
+        <span class="more">+262</span>
       </div>
-      <span class="txt"><b>260+</b> data folks already inside</span>
+      <span class="txt"><b>267</b> data folks inside · <span class="ac">★★★★★</span> rated 5.0</span>
     </div>
     <div class="terms reveal" aria-hidden="true">
       <span>free while we grow</span><span>no spam</span><span>no sales</span><span>vetted members</span>
@@ -364,24 +359,102 @@
 <section style="padding-top:36px">
   <div class="wrap">
     <div class="readout reveal">
-      <div><div class="num"><span data-count="260">0</span><span class="ac">+</span></div><div class="lbl">members</div></div>
+      <div><div class="num"><span data-count="267">0</span><span class="ac">+</span></div><div class="lbl">members</div></div>
       <div><div class="num" data-count="5" data-pad="2">0</div><div class="lbl">disciplines</div></div>
       <div><div class="num"><span class="ac">$</span><span data-count="0">0</span></div><div class="lbl">cost to join</div></div>
-      <div><div class="num" data-count="1000">0</div><div class="lbl">target</div></div>
+      <div><div class="num" data-count="5" data-suffix=".0">0</div><div class="lbl">event rating</div></div>
     </div>
     <div class="progress-line reveal">
-      <span>growth</span>
+      <span>founding spots</span>
       <span class="progress"><i id="bar"></i></span>
-      <span>260 / 1000 · 26%</span>
+      <span><b>733</b> free spots left</span>
     </div>
   </div>
 </section>
 
-<!-- ===================== EVENT ===================== -->
-<section id="event">
+<!-- ===================== WHY JOIN (spec sheet) ===================== -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">// why join</span>
+      <h2>What you actually get</h2>
+      <p>Real value from day one — no fluff, no upsell.</p>
+    </div>
+    <div class="spec">
+      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></div><h3>Free mentorship webinars</h3><p>Live sessions on breaking in, leveling up and navigating the data career maze. No cost, no catch.</p></div>
+      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h3>Ad-hoc group discussions</h3><p>Spontaneous deep-dives on tools, trends, interviews and projects. Bring a question, leave with answers.</p></div>
+      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M10 13l-3.5 3.5M14 13l3.5 3.5"/></svg></div><h3>A cross-discipline network</h3><p>Analysts, engineers, scientists and AI builders in one room. The connection (or referral) you need is one message away.</p></div>
+      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></div><h3>Career-switch support</h3><p>Switching into data? Get a realistic roadmap, portfolio feedback, and people who've made the leap.</p></div>
+      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>No spam, no sales</h3><p>A signal-rich space. Every member is vetted, so conversations stay genuine and worth your time.</p></div>
+      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Learn out loud</h3><p>Share wins, ask "dumb" questions, celebrate progress. Momentum is contagious in here.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VOICES ===================== -->
+<section id="voices">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">// member reviews</span>
+      <h2>People are growing here</h2>
+      <p>Our first live session was rated a perfect <b style="color:var(--ink);font-weight:600">5.0</b> by attendees. Here's what folks said.</p>
+    </div>
+    <!-- Real attendee feedback from the Aug 2026 session (lightly tidied). -->
+    <div class="quotes reveal">
+      <div class="quote">
+        <div class="stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
+        <p>An excellent, informative session. The guidance on transitioning into data analytics — and what the industry actually expects — gave me a much clearer direction for my career.</p>
+        <div class="by"><span class="nm"><span class="ac">&gt;</span> Roshni Yadav</span></div>
+      </div>
+      <div class="quote">
+        <div class="stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
+        <p>It gave me a very different perspective on applying for jobs. When everyone asked questions, I could see where I'd been going wrong. Looking forward to more such meetings!</p>
+        <div class="by"><span class="nm"><span class="ac">&gt;</span> Pushkar Dhond</span></div>
+      </div>
+      <div class="quote">
+        <div class="stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
+        <p>A great session — good amount of learning and insights. Really hoping to join more like this. Ye dil maange more!</p>
+        <div class="by"><span class="nm"><span class="ac">&gt;</span> Arghyajyoti Samui</span></div>
+      </div>
+      <div class="quote">
+        <div class="stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
+        <p>Perfect.</p>
+        <div class="by">
+          <span class="nm"><span class="ac">&gt;</span> Karan Malviya</span>
+          <span class="socials">
+            <a href="https://www.linkedin.com/in/karan-malviya-4983322a8/" target="_blank" rel="noopener" aria-label="Karan Malviya on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21H9z"/></svg></a>
+            <a href="https://github.com/malviyakaran321-design" target="_blank" rel="noopener" aria-label="Karan Malviya on GitHub"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17 4.7 18 5 18 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.3v3.3c0 .3.2.7.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMMUNITY WALL ===================== -->
+<section id="people">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">// the people</span>
+      <h2>You're not doing this alone</h2>
+      <p>Behind every question is someone who's been there. This is a place to be seen, ask freely, and grow with people who have your back — no gatekeeping, no judgment.</p>
+    </div>
+    <!-- Community photos: Unsplash (free license). Duotone-tinted to match the theme; color on hover. -->
+    <div class="people reveal">
+      <figure class="ph"><img src="assets/community/collab.jpg" alt="Data community members collaborating over a laptop" loading="lazy" /><span class="tint"></span><span class="shade"></span><figcaption class="cap"><span class="ac">&gt;</span> building together</figcaption></figure>
+      <figure class="ph"><img src="assets/community/group.jpg" alt="A diverse group of community members smiling together" loading="lazy" /><span class="tint"></span><span class="shade"></span><figcaption class="cap"><span class="ac">&gt;</span> everyone welcome</figcaption></figure>
+      <figure class="ph"><img src="assets/community/laughing.jpg" alt="Community members laughing together" loading="lazy" /><span class="tint"></span><span class="shade"></span><figcaption class="cap"><span class="ac">&gt;</span> good company</figcaption></figure>
+      <figure class="ph"><img src="assets/community/study.jpg" alt="A diverse study circle learning together" loading="lazy" /><span class="tint"></span><span class="shade"></span><figcaption class="cap"><span class="ac">&gt;</span> learning out loud</figcaption></figure>
+      <figure class="ph"><img src="assets/community/friends.jpg" alt="Community members supporting each other" loading="lazy" /><span class="tint"></span><span class="shade"></span><figcaption class="cap"><span class="ac">&gt;</span> we've got you</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EVENTS (upcoming/next + past) ===================== -->
+<section id="events">
   <div class="wrap">
     <!-- ▼ EDIT: to feature a NEW event, update data-event-utc (ISO/UTC) + the iframe src.
-         When that date passes, the section auto-switches to the recap view below. ▼ -->
+         When that date passes, this auto-switches to the "next session" prompt. ▼ -->
     <div class="event-solo reveal" data-event-utc="2026-08-06T12:30:00Z">
       <div class="ev-upcoming">
         <span class="label">// upcoming — free &amp; online</span>
@@ -397,22 +470,18 @@
       </div>
       <div class="ev-past" hidden>
         <span class="label">// next session</span>
-        <h2 class="ev-past-h">The next one's in the works</h2>
-        <p class="ev-past-sub">No session on the calendar right this second — but more are coming, and our last one was rated a perfect 5.0 (see below). Join the community to get first dibs on the next free invite.</p>
+        <h2 class="ev-past-h">Members get first dibs on the next one</h2>
+        <p class="ev-past-sub">No session on the calendar this exact second — but more are coming, and our last one hit a perfect <b>5.0</b>. The invites go out in the community first. Join now so you don't miss it.</p>
         <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">
           <svg class="i" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21H9z"/></svg>
-          Connect to join — get the next invite
+          Request your invite — free
         </a>
       </div>
     </div>
     <!-- ▲ EDIT ▲ -->
-  </div>
-</section>
 
-<!-- ===================== PAST EVENTS ===================== -->
-<section id="past-events">
-  <div class="wrap">
-    <div class="sec-head reveal">
+    <!-- Past events archive -->
+    <div class="sec-head reveal" style="margin-top:72px">
       <span class="label">// past events</span>
       <h2>What we've run so far</h2>
       <p>The sessions that got us here. More on the way.</p>
@@ -432,21 +501,79 @@
   </div>
 </section>
 
-<!-- ===================== WHY JOIN (spec sheet) ===================== -->
-<section id="why">
+<!-- ===================== DISCIPLINES ===================== -->
+<section id="inside">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="label">// why join</span>
-      <h2>What you actually get</h2>
-      <p>Real value from day one — no fluff, no upsell.</p>
+      <span class="label">// who's inside</span>
+      <h2>All of data, one room</h2>
     </div>
-    <div class="spec">
-      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></div><h3>Free mentorship webinars</h3><p>Live sessions on breaking in, leveling up and navigating the data career maze. No cost, no catch.</p></div>
-      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h3>Ad-hoc group discussions</h3><p>Spontaneous deep-dives on tools, trends, interviews and projects. Bring a question, leave with answers.</p></div>
-      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M10 13l-3.5 3.5M14 13l3.5 3.5"/></svg></div><h3>A cross-discipline network</h3><p>Analysts, engineers, scientists and AI builders in one room. The connection you need is one message away.</p></div>
-      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></div><h3>Career-switch support</h3><p>Switching into data? Get a realistic roadmap, portfolio feedback, and people who've made the leap.</p></div>
-      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>No spam, no sales</h3><p>A signal-rich space. Every member is vetted, so conversations stay genuine and worth your time.</p></div>
-      <div class="row reveal"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Learn out loud</h3><p>Share wins, ask "dumb" questions, celebrate progress. Momentum is contagious in here.</p></div>
+    <div class="tags reveal">
+      <span class="tag"><span class="b">[</span> analytics <span class="b">]</span></span>
+      <span class="tag"><span class="b">[</span> data engineering <span class="b">]</span></span>
+      <span class="tag"><span class="b">[</span> data science <span class="b">]</span></span>
+      <span class="tag"><span class="b">[</span> ml / ai <span class="b">]</span></span>
+      <span class="tag"><span class="b">[</span> genai <span class="b">]</span></span>
+      <span class="tag"><span class="b">[</span> bi &amp; reporting <span class="b">]</span></span>
+      <span class="tag"><span class="b">[</span> career switchers <span class="b">]</span></span>
+      <span class="tag"><span class="b">[</span> students <span class="b">]</span></span>
+    </div>
+    <p class="tags-note reveal"><span class="ac">#</span> curiosity is the only prerequisite.</p>
+    <p class="tags-note reveal"><span class="ac">#</span> not for: course-sellers · lurking recruiters · crypto bros — vetted, so it stays that way.</p>
+  </div>
+</section>
+
+<!-- ===================== HOW TO JOIN ===================== -->
+<section id="join">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">// how to join</span>
+      <h2>Two minutes, one quick review</h2>
+      <p>We keep the community vetted so every conversation stays high-signal — and so does the invite process.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><div><h3>Connect with me on LinkedIn</h3><p>Send a connection request — a one-line hello about your data journey helps me say yes faster.</p></div></div>
+      <div class="step reveal"><div class="n">02</div><div><h3>I check you're a real data person</h3><p>A quick look at your profile — that's what keeps out spam, cold recruiters and course-sellers. Usually done the same day.</p></div></div>
+      <div class="step reveal"><div class="n">03</div><div><h3>You get the invite</h3><p>I send you the WhatsApp community link and you jump straight into the conversation. That's it.</p></div></div>
+    </div>
+    <div class="join-cta reveal">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">
+        <svg class="i" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21H9z"/></svg>
+        Request your invite — free
+      </a>
+      <span class="note"># usually approved the same day · a self-serve form is coming soon.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">// faq</span>
+      <h2>Fair questions</h2>
+    </div>
+    <div class="faq reveal">
+      <details open>
+        <summary><span class="q">Q</span><span>Is it really free?</span><span class="pm">+</span></summary>
+        <div class="ans">Yes — 100% free for the first 1,000 members. Every webinar, discussion and bit of guidance is on the house. We may add paid tiers once we're bigger, but founding members keep their free access.</div>
+      </details>
+      <details>
+        <summary><span class="q">Q</span><span>Who is this for?</span><span class="pm">+</span></summary>
+        <div class="ans">Anyone in or aspiring to be in data — analysts, data engineers, data scientists, ML/AI and GenAI builders, and career-switchers or freshers finding their footing. If you're curious about data, you belong. It's <em>not</em> for course-sellers, cold recruiters or crypto bros.</div>
+      </details>
+      <details>
+        <summary><span class="q">Q</span><span>Why connect on LinkedIn to join?</span><span class="pm">+</span></summary>
+        <div class="ans">I approve every member personally — a 30-second look at your LinkedIn is the lightest way to keep the group high-signal and spam-free. It's usually done the same day. (A self-serve form is coming soon.)</div>
+      </details>
+      <details>
+        <summary><span class="q">Q</span><span>What's the catch? Selling courses?</span><span class="pm">+</span></summary>
+        <div class="ans">No catch, no course-selling, no MLM. The community is tool-neutral and unsponsored in spirit — MLDeep Systems simply powers it so the mentorship stays free.</div>
+      </details>
+      <details>
+        <summary><span class="q">Q</span><span>How much time does it take?</span><span class="pm">+</span></summary>
+        <div class="ans">As little or as much as you like. Drop in for a webinar, lurk on discussions, or jump into everything — zero pressure, no attendance requirements.</div>
+      </details>
     </div>
   </div>
 </section>
@@ -487,151 +614,17 @@
   </div>
 </section>
 
-<!-- ===================== DISCIPLINES ===================== -->
-<section id="inside">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="label">// who's inside</span>
-      <h2>All of data, one room</h2>
-    </div>
-    <div class="tags reveal">
-      <span class="tag"><span class="b">[</span> analytics <span class="b">]</span></span>
-      <span class="tag"><span class="b">[</span> data engineering <span class="b">]</span></span>
-      <span class="tag"><span class="b">[</span> data science <span class="b">]</span></span>
-      <span class="tag"><span class="b">[</span> ml / ai <span class="b">]</span></span>
-      <span class="tag"><span class="b">[</span> genai <span class="b">]</span></span>
-      <span class="tag"><span class="b">[</span> bi &amp; reporting <span class="b">]</span></span>
-      <span class="tag"><span class="b">[</span> career switchers <span class="b">]</span></span>
-      <span class="tag"><span class="b">[</span> students <span class="b">]</span></span>
-    </div>
-    <p class="tags-note reveal"># curiosity is the only prerequisite.</p>
-  </div>
-</section>
-
-<!-- ===================== COMMUNITY WALL ===================== -->
-<section id="people">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="label">// the people</span>
-      <h2>You're not doing this alone</h2>
-      <p>Behind every question is someone who's been there. This is a place to be seen, ask freely, and grow with people who have your back — no gatekeeping, no judgment.</p>
-    </div>
-    <!-- Community photos: Unsplash (free license). Duotone-tinted to match the theme; color on hover. -->
-    <div class="people reveal">
-      <figure class="ph"><img src="assets/community/collab.jpg" alt="Data community members collaborating over a laptop" loading="lazy" /><span class="tint"></span><span class="shade"></span><figcaption class="cap"><span class="ac">&gt;</span> building together</figcaption></figure>
-      <figure class="ph"><img src="assets/community/group.jpg" alt="A diverse group of community members smiling together" loading="lazy" /><span class="tint"></span><span class="shade"></span><figcaption class="cap"><span class="ac">&gt;</span> everyone welcome</figcaption></figure>
-      <figure class="ph"><img src="assets/community/laughing.jpg" alt="Community members laughing together" loading="lazy" /><span class="tint"></span><span class="shade"></span><figcaption class="cap"><span class="ac">&gt;</span> good company</figcaption></figure>
-      <figure class="ph"><img src="assets/community/study.jpg" alt="A diverse study circle learning together" loading="lazy" /><span class="tint"></span><span class="shade"></span><figcaption class="cap"><span class="ac">&gt;</span> learning out loud</figcaption></figure>
-      <figure class="ph"><img src="assets/community/friends.jpg" alt="Community members supporting each other" loading="lazy" /><span class="tint"></span><span class="shade"></span><figcaption class="cap"><span class="ac">&gt;</span> we've got you</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== VOICES ===================== -->
-<section id="voices">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="label">// member voices</span>
-      <h2>People are growing here</h2>
-      <p>Our first live session was rated a perfect <b style="color:var(--ink);font-weight:600">5.0</b> by attendees. Here's what folks said.</p>
-    </div>
-    <!-- Real attendee feedback from the Aug 2026 session (lightly tidied). -->
-    <div class="quotes reveal">
-      <div class="quote">
-        <div class="stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
-        <p>An excellent, informative session. The guidance on transitioning into data analytics — and what the industry actually expects — gave me a much clearer direction for my career.</p>
-        <div class="by"><span class="nm"><span class="ac">&gt;</span> Roshni Yadav</span></div>
-      </div>
-      <div class="quote">
-        <div class="stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
-        <p>It gave me a very different perspective on applying for jobs. When everyone asked questions, I could see where I'd been going wrong. Looking forward to more such meetings!</p>
-        <div class="by"><span class="nm"><span class="ac">&gt;</span> Pushkar Dhond</span></div>
-      </div>
-      <div class="quote">
-        <div class="stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
-        <p>A great session — good amount of learning and insights. Really hoping to join more like this. Ye dil maange more!</p>
-        <div class="by"><span class="nm"><span class="ac">&gt;</span> Arghyajyoti Samui</span></div>
-      </div>
-      <div class="quote">
-        <div class="stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
-        <p>Perfect.</p>
-        <div class="by">
-          <span class="nm"><span class="ac">&gt;</span> Karan Malviya</span>
-          <span class="socials">
-            <a href="https://www.linkedin.com/in/karan-malviya-4983322a8/" target="_blank" rel="noopener" aria-label="Karan Malviya on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21H9z"/></svg></a>
-            <a href="https://github.com/malviyakaran321-design" target="_blank" rel="noopener" aria-label="Karan Malviya on GitHub"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17 4.7 18 5 18 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.3v3.3c0 .3.2.7.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== HOW TO JOIN ===================== -->
-<section id="join">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="label">// how to join</span>
-      <h2>Three steps, one review</h2>
-      <p>We keep the community vetted so every conversation stays high-signal.</p>
-    </div>
-    <div class="steps">
-      <div class="step reveal"><div class="n">01</div><div><h3>Connect on LinkedIn</h3><p>Send a connection request — a quick note about your data journey helps.</p></div></div>
-      <div class="step reveal"><div class="n">02</div><div><h3>I review your profile</h3><p>A light, friendly check to keep the community genuine and spam-free.</p></div></div>
-      <div class="step reveal"><div class="n">03</div><div><h3>Get your invite</h3><p>You'll receive the WhatsApp community link and jump straight into the conversation.</p></div></div>
-    </div>
-    <div class="join-cta reveal">
-      <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">
-        <svg class="i" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21H9z"/></svg>
-        Connect on LinkedIn
-      </a>
-      <span class="note"># a self-serve join form is coming soon.</span>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== FAQ ===================== -->
-<section id="faq">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="label">// faq</span>
-      <h2>Fair questions</h2>
-    </div>
-    <div class="faq reveal">
-      <details open>
-        <summary><span class="q">Q</span><span>Is it really free?</span><span class="pm">+</span></summary>
-        <div class="ans">Yes — 100% free. While we grow toward 1,000 members, every webinar, discussion and bit of guidance is on the house. The goal right now is a thriving community, not revenue.</div>
-      </details>
-      <details>
-        <summary><span class="q">Q</span><span>Who is this for?</span><span class="pm">+</span></summary>
-        <div class="ans">Anyone in or aspiring to be in data — analysts, data engineers, data scientists, ML/AI and GenAI builders, and career-switchers or freshers finding their footing. If you're curious about data, you belong.</div>
-      </details>
-      <details>
-        <summary><span class="q">Q</span><span>Why connect on LinkedIn to join?</span><span class="pm">+</span></summary>
-        <div class="ans">We vet members to keep the group high-signal and spam-free. A quick look at your LinkedIn profile is the lightest way to do that. A self-serve join form is coming soon.</div>
-      </details>
-      <details>
-        <summary><span class="q">Q</span><span>What's the catch? Selling courses?</span><span class="pm">+</span></summary>
-        <div class="ans">No catch, no course-selling, no MLM. The community is tool-neutral and unsponsored in spirit — MLDeep Systems simply powers it so the mentorship stays free.</div>
-      </details>
-      <details>
-        <summary><span class="q">Q</span><span>How much time does it take?</span><span class="pm">+</span></summary>
-        <div class="ans">As little or as much as you like. Drop in for a webinar, lurk on discussions, or jump into everything — zero pressure, no attendance requirements.</div>
-      </details>
-    </div>
-  </div>
-</section>
-
 <!-- ===================== FINAL CTA ===================== -->
 <section>
   <div class="wrap">
     <div class="final reveal">
       <h2>Data is a team sport. <span class="ac">Pull up a chair.</span></h2>
-      <p>Join 260+ members trading knowledge, feedback and job leads — and help us reach 1,000. It's free, and it starts with a single connection.</p>
+      <p>Join 267 data folks swapping feedback, job leads and honest advice — and grab one of the 733 free founding-member spots before we hit 1,000.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">Connect on LinkedIn to join</a>
-        <a class="btn btn-ghost" href="https://luma.com/riabx20e" target="_blank" rel="noopener">Register for the event</a>
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">Request your invite — free</a>
+        <a class="btn btn-ghost" href="#why">See what you get</a>
       </div>
+      <p class="cta-note"><span style="color:var(--accent)">//</span> connect on LinkedIn — I approve members personally, usually same day.</p>
     </div>
   </div>
 </section>
@@ -660,7 +653,7 @@
       <span class="fine">© <span id="year">2026</span> data_savvy_folks — built by the community, for the community.</span>
       <div class="flinks">
         <a href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">linkedin</a>
-        <a href="https://luma.com/riabx20e" target="_blank" rel="noopener">event</a>
+        <a href="#events">events</a>
         <a href="https://www.mldeep.io/?utm_source=datasavvyfolks&amp;utm_medium=referral&amp;utm_campaign=community_sponsor" target="_blank" rel="noopener">sponsor</a>
         <a href="#top">↑ top</a>
       </div>
@@ -669,21 +662,21 @@
 </footer>
 
 <div class="sticky-cta">
-  <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">Join the community</a>
-  <a class="btn btn-ghost" href="https://luma.com/riabx20e" target="_blank" rel="noopener">Event</a>
+  <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">Request your invite</a>
+  <a class="btn btn-ghost" href="#why">Why join</a>
 </div>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
   function animateCount(el){
-    const target = +el.dataset.count, pad = +el.dataset.pad || 0, dur = 1300, start = performance.now();
+    const target = +el.dataset.count, pad = +el.dataset.pad || 0, suffix = el.dataset.suffix || '', dur = 1300, start = performance.now();
     function tick(now){
       const p = Math.min((now - start) / dur, 1);
       const eased = 1 - Math.pow(1 - p, 3);
       let v = Math.round(target * eased).toLocaleString();
       if (pad) v = String(Math.round(target * eased)).padStart(pad, '0');
-      el.textContent = v;
+      el.textContent = v + (p === 1 ? suffix : '');
       if (p < 1) requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
@@ -700,13 +693,13 @@
       if (!e.isIntersecting) return;
       document.querySelectorAll('.num [data-count], .num[data-count]').forEach(animateCount);
       const bar = document.getElementById('bar');
-      if (bar) bar.style.width = '26%';
+      if (bar) bar.style.width = '26.7%'; // 267 / 1000
       rIO.disconnect();
     });
   }, { threshold: .5 });
   if (readout) rIO.observe(readout);
 
-  // Event section: show the upcoming view before the event, the recap view after.
+  // Events: show the upcoming view before the event, the "next session" prompt after.
   const eventWrap = document.querySelector('.event-solo[data-event-utc]');
   if (eventWrap) {
     const target = new Date(eventWrap.dataset.eventUtc).getTime();
