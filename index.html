@@ -228,6 +228,15 @@
   .ev-cta { margin-top: 26px; }
   .event-solo { display: flex; flex-direction: column; align-items: center; text-align: center; }
   .event-solo .countdown { justify-content: center; margin: 20px 0 24px; }
+  .ev-upcoming:not([hidden]), .ev-past:not([hidden]) { display: flex; flex-direction: column; align-items: center; width: 100%; }
+  .ev-past-h { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 14px 0 12px; }
+  .ev-past-sub { color: var(--muted); max-width: 60ch; margin-bottom: 28px; }
+  .ev-past-sub b { color: var(--ink); }
+  .recap-stats { display: flex; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin-bottom: 30px; }
+  .recap-stats > div { background: var(--bg); padding: 20px 34px; }
+  .recap-stats b { font-family: var(--display); font-size: 1.9rem; font-weight: 700; display: block; color: var(--accent); line-height: 1; }
+  .recap-stats small { font-family: var(--mono); font-size: .66rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  @media (max-width: 480px){ .recap-stats > div { padding: 16px 20px; } }
   .embed-lg { width: 100%; max-width: 920px; }
   .embed.embed-lg iframe { width: 100%; height: 360px; border: none; border-radius: 10px; display: block; overflow: hidden; } /* wide: Luma reflows to a horizontal card */
   @media (max-width: 800px){ .embed.embed-lg iframe { height: 840px; } } /* narrow: vertical card — tall enough to show the embed's register button */
@@ -362,20 +371,37 @@
 <!-- ===================== EVENT ===================== -->
 <section id="event">
   <div class="wrap">
-    <div class="event-solo reveal">
-      <span class="label">// upcoming — free &amp; online</span>
-      <!-- ▼ EDIT for your next event: iframe src + data-event-utc ▼ -->
-      <div class="countdown" id="countdown" data-event-utc="2026-08-06T12:30:00Z" aria-label="Time until event">
-        <div class="cd"><b data-cd="d">--</b><small>days</small></div>
-        <div class="cd"><b data-cd="h">--</b><small>hrs</small></div>
-        <div class="cd"><b data-cd="m">--</b><small>min</small></div>
-        <div class="cd"><b data-cd="s">--</b><small>sec</small></div>
+    <!-- ▼ EDIT: to feature a NEW event, update data-event-utc (ISO/UTC) + the iframe src.
+         When that date passes, the section auto-switches to the recap view below. ▼ -->
+    <div class="event-solo reveal" data-event-utc="2026-08-06T12:30:00Z">
+      <div class="ev-upcoming">
+        <span class="label">// upcoming — free &amp; online</span>
+        <div class="countdown" id="countdown" aria-label="Time until event">
+          <div class="cd"><b data-cd="d">--</b><small>days</small></div>
+          <div class="cd"><b data-cd="h">--</b><small>hrs</small></div>
+          <div class="cd"><b data-cd="m">--</b><small>min</small></div>
+          <div class="cd"><b data-cd="s">--</b><small>sec</small></div>
+        </div>
+        <div class="embed embed-lg">
+          <iframe src="https://luma.com/embed/event/evt-8DOgTBdRAV3L6Ot/simple" title="Register for Breaking Into Data on Luma" loading="lazy" allow="fullscreen; payment" scrolling="no" tabindex="0"></iframe>
+        </div>
       </div>
-      <div class="embed embed-lg">
-        <iframe src="https://luma.com/embed/event/evt-8DOgTBdRAV3L6Ot/simple" title="Register for Breaking Into Data on Luma" loading="lazy" allow="fullscreen; payment" scrolling="no" tabindex="0"></iframe>
+      <div class="ev-past" hidden>
+        <span class="label">// recent event · rated 5.0</span>
+        <h2 class="ev-past-h">Our last session was a hit</h2>
+        <p class="ev-past-sub">&ldquo;Breaking Into Data&rdquo; landed a perfect <b>5.0</b> from attendees. Missed it? The next free session is in the works — join the community to get the invite first.</p>
+        <div class="recap-stats">
+          <div><b>5.0</b><small>avg rating</small></div>
+          <div><b>6</b><small>ratings</small></div>
+          <div><b>100%</b><small>5-star</small></div>
+        </div>
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/anmol01" target="_blank" rel="noopener">
+          <svg class="i" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21H9z"/></svg>
+          Connect to join — get the next invite
+        </a>
       </div>
-      <!-- ▲ EDIT ▲ -->
     </div>
+    <!-- ▲ EDIT ▲ -->
   </div>
 </section>
 
@@ -480,23 +506,24 @@
     <div class="sec-head reveal">
       <span class="label">// member voices</span>
       <h2>People are growing here</h2>
+      <p>Our first live session was rated a perfect <b style="color:var(--ink);font-weight:600">5.0</b> by attendees. Here's what folks said.</p>
     </div>
-    <!-- ⚠️ PLACEHOLDER — swap for real member quotes (with permission) before heavy promotion. -->
+    <!-- Real attendee feedback from the Aug 2026 session (lightly tidied). -->
     <div class="quotes reveal">
       <div class="quote">
         <div class="qm">&ldquo;</div>
-        <p>Came in as a career-switcher with zero network. Two webinars later I had a portfolio plan and three people reviewing my projects.</p>
-        <div class="by"><span class="ac">&gt;</span> aspiring analyst · career-switcher</div>
+        <p>An excellent, informative session. The guidance on transitioning into data analytics — and what the industry actually expects — gave me a much clearer direction for my career.</p>
+        <div class="by"><span class="ac">&gt;</span> Roshni Yadav · rated 5/5</div>
       </div>
       <div class="quote">
         <div class="qm">&ldquo;</div>
-        <p>Finally a data group with no spam and no course-selling. Just sharp people answering real questions.</p>
-        <div class="by"><span class="ac">&gt;</span> data engineer · 3 yrs</div>
+        <p>It gave me a very different perspective on applying for jobs. When everyone asked questions, I could see where I'd been going wrong. Looking forward to more such meetings!</p>
+        <div class="by"><span class="ac">&gt;</span> Pushkar Dhond · rated 5/5</div>
       </div>
       <div class="quote">
         <div class="qm">&ldquo;</div>
-        <p>The GenAI conversations keep me current in a way Twitter never did. Smart, generous folks who actually build.</p>
-        <div class="by"><span class="ac">&gt;</span> ml engineer · building with llms</div>
+        <p>A great session — good amount of learning and insights. Really hoping to join more like this. Ye dil maange more!</p>
+        <div class="by"><span class="ac">&gt;</span> Arghyajyoti Samui · rated 5/5</div>
       </div>
     </div>
   </div>
@@ -641,20 +668,28 @@
   }, { threshold: .5 });
   if (readout) rIO.observe(readout);
 
-  const cdEl = document.getElementById('countdown');
-  const eventBox = document.querySelector('[data-event-utc]');
-  if (cdEl && eventBox) {
-    const target = new Date(eventBox.dataset.eventUtc).getTime();
-    const set = (k, v) => { const n = cdEl.querySelector('[data-cd="'+k+'"]'); if (n) n.textContent = String(v).padStart(2,'0'); };
-    function render(){
-      const diff = target - Date.now();
-      if (diff <= 0) { cdEl.innerHTML = '<div class="cd" style="min-width:auto;padding:12px 18px"><b style="font-size:1rem">happening soon →</b></div>'; return; }
-      const s = Math.floor(diff/1000);
-      set('d', Math.floor(s/86400)); set('h', Math.floor((s%86400)/3600));
-      set('m', Math.floor((s%3600)/60)); set('s', s%60);
-      requestAnimationFrame(() => setTimeout(render, 1000));
+  // Event section: show the upcoming view before the event, the recap view after.
+  const eventWrap = document.querySelector('.event-solo[data-event-utc]');
+  if (eventWrap) {
+    const target = new Date(eventWrap.dataset.eventUtc).getTime();
+    const EVENT_LEN_MS = 90 * 60 * 1000; // treat as "past" 90 min after start
+    const upEl = eventWrap.querySelector('.ev-upcoming');
+    const pastEl = eventWrap.querySelector('.ev-past');
+    if (Date.now() > target + EVENT_LEN_MS) {
+      if (upEl) upEl.hidden = true;
+      if (pastEl) pastEl.hidden = false;
+    } else {
+      const cdEl = eventWrap.querySelector('#countdown');
+      const set = (k, v) => { const n = cdEl && cdEl.querySelector('[data-cd="'+k+'"]'); if (n) n.textContent = String(v).padStart(2,'0'); };
+      (function render(){
+        const diff = target - Date.now();
+        if (diff <= 0) { if (cdEl) cdEl.innerHTML = '<div class="cd" style="min-width:auto;padding:12px 18px"><b style="font-size:1rem">happening now →</b></div>'; return; }
+        const s = Math.floor(diff/1000);
+        set('d', Math.floor(s/86400)); set('h', Math.floor((s%86400)/3600));
+        set('m', Math.floor((s%3600)/60)); set('s', s%60);
+        requestAnimationFrame(() => setTimeout(render, 1000));
+      })();
     }
-    render();
   }
 </script>
 
